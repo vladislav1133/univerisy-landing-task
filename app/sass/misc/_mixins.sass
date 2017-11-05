@@ -1,0 +1,157 @@
+
+@mixin clearfix
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+
+
+%clearfix
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+
+
+
+
+@mixin desktop
+	@media only screen and (min-width: 1200px)
+		@content
+
+
+@mixin tablet
+	@media only screen and (min-width: 768px)
+		@content
+
+@mixin mobile
+	@media only screen and (min-width: 480px)
+		@content
+
+@mixin mobile-only
+	@media only screen and (max-width: 767px)
+		@content
+
+
+
+/////////////////////////////////////////////////////////////
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@mixin desk-lg
+@media only screen and (max-width : 1200px)
+	@content
+/**/
+
+
+/* Medium Devices, Desktops */
+@mixin desk-md
+@media only screen and (max-width : 992px)
+	@content
+/**/
+
+/* Small Devices, Tablets */
+@mixin desk-sd
+@media only screen and (max-width : 768px)
+	@content
+/**/
+
+
+	/*Disable Animation on Mobile Devices*/
+	//.animated
+		/*CSS transitions*/
+		//-o-transition-property: none !important
+		//-moz-transition-property: none !important
+		//-ms-transition-property: none !important
+		//-webkit-transition-property: none !important
+		//transition-property: none !important
+		///*CSS transforms*/
+		//-o-transform: none !important
+		//-moz-transform: none !important
+		//-ms-transform: none !important
+		//-webkit-transform: none !important
+		//transform: none !important
+		///*CSS animations*/
+		//-webkit-animation: none !important
+		//-moz-animation: none !important
+		//-o-animation: none !important
+		//-ms-animation: none !important
+		//animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@mixin desk-xs
+@media only screen and (max-width : 480px)
+	@content
+/**/
+
+
+/* Custom, iPhone Retina */
+@mixin desk-vs
+@media only screen and (max-width : 320px)
+	@content
+/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@mixin mobile-vs
+@media only screen and (min-width : 320px)
+	@content
+/**/
+
+
+/* Extra Small Devices, Phones */
+@mixin mobile-xs
+@media only screen and (min-width : 480px)
+	@content
+/**/
+
+
+/* Small Devices, Tablets */
+@mixin mobile-sd
+@media only screen and (min-width : 768px)
+	@content
+/**/
+
+
+/* Medium Devices, Desktops */
+@mixin mobile-md
+@media only screen and (min-width : 992px)
+	@content
+/**/
+
+
+/* Large Devices, Wide Screens */
+@mixin mobile-lg
+@media only screen and (min-width : 1200px)
+	@content
+/**/
+
+//Containers
+//
+//@mixin container
+//	width: 320px
+//	margin: 0 auto
+//	@media (min-width: 768px)
+//		width: 640px
+//
+//
+//	@media (min-width: 1200px)
+//		width: 960px
+//
+//
+//
+//@mixin container-fluid
+//	width: auto;
+//
+//	@include tablet
+		//width: 84%;  //640px/768px=84%
+		//max-width: 960px; //960px/.84=1142
+		//margin: 0 auto;
+
+
+
