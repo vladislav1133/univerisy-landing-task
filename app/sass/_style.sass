@@ -1,0 +1,498 @@
+/** COMMON STYLES **/
+a
+  text-decoration: none
+  color: #fff
+  transition: 0.3s color ease
+
+.btn
+  border: 0
+  outline: 0
+  transition: .3s background ease
+
+header
+  background-color: #fff
+
+
+
+/** MENU **/
+.menu
+  position: fixed
+  display: block
+  left: 100%
+  top: 0
+  width: 100%
+  flex-direction: row-reverse
+  background-color: #000
+  color: #fff
+  z-index: 100000
+  box-sizing: border-box
+
+
+
+  &__list
+    width: 100%
+    background-color: #000
+    z-index: 100000
+
+  &__item
+    padding-left: 20px
+    display: block
+    border-bottom: 2px solid #fff
+    background-color: #44749d
+    color: #fff
+
+
+  &__sub-link
+    display: block
+    padding: 5px 5px 5px 20px
+    background-color: #588bb7
+    color: #fff
+    transition: .3s ease
+
+    &:active, &:focus
+      background-color: lighten(#588bb7, 5%)
+
+  &__close
+    position: absolute
+    top: 0
+    right: 10px
+    font-size: 30px
+
+  &__sub
+    display: none
+    border-bottom: 2px solid #fff
+    
+.mob-nav
+  width: 100%
+  background-color: #033f91
+  display: none
+  min-height: 50px
+
+  &__burger
+    position: absolute
+    padding-right: 10px
+    font-size: 36px
+    right: 0
+    display: block
+    color: #fff
+    
+/** HEADER **/
+.header
+  display: flex
+
+  background: #fff
+
+  &__left
+    width: 30%
+    padding-top: 15px
+
+
+  &__right
+    width: 70%
+
+  &__logo
+    width: 100px
+
+  &__title
+    color: #033F91
+    text-align: center
+
+
+
+/** NAV **/
+nav
+  background-color: #44749D
+
+.nav
+  display: flex
+  justify-content: space-between
+  margin-bottom: 20px
+
+
+  &:after
+    display: block
+    content: ' '
+    clear: both
+    float: none
+
+  &__link
+    color: #fff
+    display: block
+    padding: 10px
+    text-decoration: none
+    font-size: 16px
+
+
+    &:hover
+      color: #fff
+      text-decoration: underline
+
+.nav > li:hover > ul.submenu
+  display: block
+
+
+.submenu
+  display: none
+  position: absolute
+  background-color: #44749D
+  z-index: 10000
+
+  &__item
+    display: block
+
+
+  &__link
+    display: block
+    padding: 10px
+    color: #fff
+    font-size: 16px
+    background-color: #44749D
+    text-decoration: none
+    transition: .3s background ease
+
+
+    &:hover
+      background: lighten(#44749D, 9%)
+      color: #fff
+
+
+
+/** ACCORDION **/
+.accordion
+  cursor: pointer
+  padding: 8px 18px 8px
+  width: 100%
+  text-align: left
+  outline: none
+  transition: 0.4s
+
+.panel
+  padding: 0 18px
+  background-color: white
+  display: none
+
+
+
+
+
+
+
+
+
+
+/** PORTFOLIO **/
+.portfolios
+  min-height: 500px
+
+  &__header
+    text-align: center
+    font-size: 24px
+    color: #033f91
+
+
+.portfolio
+  background: #fff
+  min-height: 500px
+  padding-top: 10px
+  border-radius: 10px
+
+
+  &__left
+    float: left
+    width: 50%
+    border-radius: 50%
+
+  &__right
+    width: 50%
+    float: right
+
+  &__img
+    height: 255px
+    width: 255px
+    border-radius: 50%
+    margin-top: 30px
+
+  &__list
+    float: right
+    width: 50%
+
+  &__title
+    font-size: 22px
+    margin-bottom: 5px
+
+  &__prof
+    display: inline-block
+    margin-bottom: 5px
+    border-bottom: 1px solid black
+    max-width: 320px
+    text-align: center
+
+
+  &__text
+    text-align: left
+    color: #6e7782
+    margin-bottom: 5px
+
+    span
+      color: #000
+      font-weight: bold
+
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.contacts
+  text-align: left
+  &__icon
+    padding-right: 5px
+
+  &__item
+    text-align: left
+
+/** NEWS **/
+
+.news
+  margin: 0 15px 30px 15px
+  background: #f7f7f7
+
+  &__header
+    margin-bottom: 20px
+    text-align: center
+    font-size: 24px
+    color: #033f91
+
+
+.new
+  padding: 15px
+  display: flex
+  margin-bottom: 25px
+  background-color: #fff
+  -webkit-border-radius:
+  -moz-border-radius:
+  border-radius: 10px
+
+  &__left
+    width: 30%
+    margin-right: 5%
+
+  &__img img
+    border-radius: 10px
+    transition: 0.3s opacity ease
+
+  &__right
+    width: 65%
+
+  &__title
+    margin-top: 0
+    color: #000
+
+  &__date
+    color: #464646
+    margin-bottom: 5px
+    i
+      color: #337ab7
+
+
+  &__text
+    font-size: 14px
+    margin-bottom: 8px
+    color: #6d6f77
+
+  &__btn
+    float: right
+    color: #fff
+    background-color: #033f91
+    width: 55px
+    text-align: center
+    padding: 4px 6px 4px 6px
+    border-radius: 5px
+    transition: .3s background ease
+
+    &:hover, &:focus
+      background: lighten(#033f91,25%)
+
+
+/** FOOTER **/
+
+footer
+  background-color: #2b2e33
+
+.footer
+  color: #fff
+  padding-top: 30px
+
+
+  &__top
+    display: flex
+
+  &__left
+    width: 70%
+
+  &__right
+    width: 30%
+
+  &__bottom
+    display: flex
+    width: 100%
+    padding-top: 20px
+    padding-bottom: 5px
+    flex-direction: column
+
+/** INFO **/
+.info
+  display: flex
+  justify-content: space-around
+  text-align: center
+
+  &__text
+    color: #ccc
+  &__link
+    color: #ccc
+    transition: .3s color ease
+    &:hover, &:focus
+      color: #fff
+
+  &__head
+    font-weight: bold
+    font-size: 16px
+
+
+/** FORM **/
+.form
+  padding-right: 15px
+  padding-left: 15px
+  width: 90%
+
+  &__btn
+    color: #fff
+    background-color: #3d4347
+    padding: 10px 10px
+    border-radius: 5px
+    width: 100%
+
+    &:hover, &:focus
+      background-color: lighten(#3d4347, 5%)
+
+  &__input
+    padding-left: 10px
+    width: 100%
+    background-color: #3d4347
+    border: 1px solid #4d555a
+    border-radius: 5px
+    color: #fefefe
+    margin-bottom: 15px
+    min-height: 27px
+    transition: 0.3s background ease
+    box-sizing: border-box
+
+  &__title
+    text-align: center
+    font-size: 18px
+
+    &:focus
+      background-color: #1e2123
+      outline: none
+
+.copyright
+  width: 100%
+  text-align: center
+
+.social
+  text-align: center
+  width: 100%
+  display: flex
+  padding-right: 15px
+
+  &__list
+    margin: 0 auto
+  &__item
+    display: inline
+  &__link
+    margin-right: 5px
+    color: #ccc
+    transition: .3s ease
+
+    &:hover, &:focus
+      color: #fff
+
+
+/* SLIDER
+
+
+#block-for-slider
+  width: 100%
+  margin: 0 auto
+
+#viewport
+  width: 100%
+  position: relative
+  overflow: hidden
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  -o-user-select: none
+  user-select: none
+  text-align: center
+
+#slidewrapper
+  position: relative
+  width: calc(100% * 4)
+  -webkit-transition: 1s
+  -o-transition: 1s
+  transition: 1s
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1)
+  -o-transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1)
+  transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1)
+  margin: 0
+  padding: 0
+  ul, li
+    margin: 0
+    padding: 0
+
+.slide
+  width: calc(100%/4)
+  list-style: none
+  display: inline
+  float: left
+
+.slide-img
+  width: 100%
+
+#prev-btn, #next-btn
+  position: absolute
+  font-size: 80px
+  opacity: 0.2
+  top: 50%
+
+#prev-btn:hover, #next-btn:hover
+  cursor: pointer
+
+#prev-btn
+  left: 20px
+
+#next-btn
+  right: 20px
+
+#nav-btns
+  position: absolute
+  width: 100%
+  bottom: 20px
+  padding: 0
+  margin: 0
+  text-align: center
+
+.slide-nav-btn
+  position: relative
+  display: inline-block
+  list-style: none
+  width: 20px
+  height: 20px
+  background-color: #000
+  opacity: 0.2
+  border-radius: 50%
+  margin: 3px
+  &:hover
+    cursor: pointer

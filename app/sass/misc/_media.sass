@@ -1,75 +1,156 @@
-
-
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+//@media only screen and (max-width: 1200px)
+/**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  .mob-nav
+    display: block
+
+
+  nav
+    display: none
+
+  .footer
+
+    &__left
+      width: 50%
+
+    &__right
+      width: 50%
+
+  .info
+    display: block
+    width: 100%
+
+
+    &__item
+      width: 50%
+      float: right
+
+    &:after
+      content: ""
+      display: table
+      clear: both
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	
-	/*Disable Animation on Mobile Devices*/
-	.animated
-		/*CSS transitions*/
-		-o-transition-property: none !important
-		-moz-transition-property: none !important
-		-ms-transition-property: none !important
-		-webkit-transition-property: none !important
-		transition-property: none !important
-		/*CSS transforms*/
-		-o-transform: none !important
-		-moz-transform: none !important
-		-ms-transform: none !important
-		-webkit-transform: none !important
-		transform: none !important
-		/*CSS animations*/
-		-webkit-animation: none !important
-		-moz-animation: none !important
-		-o-animation: none !important
-		-ms-animation: none !important
-		animation: none !important
+@media only screen and (max-width: 768px)
 
+  .header
+
+    &__left
+      width: 20%
+
+    &__right
+      width: 80%
+
+    &__title
+      font-size: 24px
+
+  .footer
+    padding-top: 10px
+    &__top
+      flex-direction: column-reverse
+
+    &__right, &__left
+      width: 100%
+  .form
+    width: 80%
+    margin: 0 auto 15px
+
+    &__title
+      font-size: 20px
+      margin-bottom: 10px
+
+  .info
+
+    &__item
+      margin-bottom: 15px
+
+  .portfolios
+     min-height: 0
+
+  .portfolio
+    min-height: 650px
+
+    &__left
+      width: 100%
+
+    &__right
+      width: 100%
+
+    &__text, .contacts
+      padding-left: 25px
+      padding-right: 25px
+
+  .form
+    width: 50%
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 480px)
+
+  .new
+    display: flex
+    flex-direction: column
+
+    &__left, &__right
+      width: 100%
+
+    &__img, &__title, &__date
+      text-align: center
 
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+    &__text
+      font-size: 12px
+      text-align: center
+
+  .header
+
+    &__left
+      display: none
+
+    &__right
+      width: 100%
+
+    &__title
+      font-size: 20px
 
 
-/*==========  Mobile First Method  ==========*/
+  .portfolio
+    min-height: 500px
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
+    &__img
+      width: 120px
+      height: auto
+      margin-top: 15px
 
+    &__title
+      font-size: 18px
+    &__text
+      font-size: 12px
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
+  .contacts
+    font-size: 12px
 
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+  .form
+    width: 70%
 
+  .new
+
+    &__title
+      font-size: 14px
+
+    &__text
+      font-size: 12px
+
+
+
+@media only screen and (max-width: 360px)
+
+  .portfolio
+    min-height: 550px
